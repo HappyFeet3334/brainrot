@@ -1,0 +1,25 @@
+/* Reset body styles */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+    position: relative;
+    background-color: #f0f0f0;
+  }
+  
+  /* Fullscreen container for the images */
+  .image-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  /* Styling for individual images */
+  .image-container img {
+    position: absolute;
+    height: auto;
+    top: calc(var(--random-top, 0) * 1%);
+    left: calc(var(--random-left, 0) * 1%);
+    transform: rotate(calc(var(--random-rotation, 0) * 1deg));
+  }
+  
